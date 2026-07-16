@@ -1,16 +1,13 @@
 import { navigate } from "../../router";
-import byeIMG from "./bye.png";
 
-export function mountLastPage() {
+export function mountLast() {
   const lastRootEl = document.createElement("div");
   lastRootEl.classList.add("last-root");
   lastRootEl.innerHTML = `
-  <h1>last page</h1>
-  <img src=${byeIMG} alt="" />
-  <button>Next</button>
+  <h2>¡¡Ya estas inscripto/a a la carrera!!</h2>
   `;
   lastRootEl.querySelector("button")?.addEventListener("click", () => {
-    navigate("/welcome");
+    navigate("/last");
   });
   return lastRootEl;
 }

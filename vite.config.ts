@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/functional-router/", // 👈 clave
+  base: "/CDLP26-team-impulso/", // 👈 clave
   build: {
     outDir: "docs", // 👈 carpeta que va a leer GitHub Pages
   },

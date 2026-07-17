@@ -110,9 +110,7 @@ button:active {\r
 }\r
 `;function t(){let t=document.createElement(`div`),n=document.createElement(`style`);return n.textContent=e,t.classList.add(`welcome-root`),t.innerHTML=`
 <section class="form">
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdZFFNWHx72RQFYKLcQlOygRMmx3HUkc33b6Q-ubbKKENCARA/viewform?embedded=true" width="640" height="841" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
-  <p>Una vez enviado el formulario ya estas inscripto/a</p>
-  <p>Recuerda abonar por alguno de los medios de pago</p>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdXYl4DO9wTUQiv4F38P6VIq0U9e-JwlrB5EsjblDTIPCBhhA/viewform?embedded=true" width="640" height="2493" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
   <button>Ver pagos</button>
 </section">
   `,t.appendChild(n),t.querySelector(`button`)?.addEventListener(`click`,e=>{o(`/informacion`)}),t}var n=`/* ===========================\r
@@ -357,6 +355,42 @@ button:focus-visible {\r
   font-size: 0.8rem;\r
   font-weight: 700;\r
 }\r
+\r
+.whatsapp-link {\r
+  display: inline-flex;\r
+  align-items: center;\r
+  gap: 0.4rem;\r
+\r
+  padding: 0.6rem 1rem;\r
+\r
+  margin-top: 0.3rem;\r
+\r
+  background: #25d366;\r
+  color: white;\r
+  text-decoration: none;\r
+  font-weight: 600;\r
+\r
+  border-radius: 999px;\r
+\r
+  transition:\r
+    background 0.2s,\r
+    transform 0.15s,\r
+    box-shadow 0.2s;\r
+}\r
+\r
+.whatsapp-link:hover {\r
+  background: #1ebe5d;\r
+  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.25);\r
+}\r
+\r
+.whatsapp-link:active {\r
+  transform: scale(0.98);\r
+}\r
+\r
+.whatsapp-link:focus-visible {\r
+  outline: 3px solid rgba(37, 211, 102, 0.3);\r
+  outline-offset: 3px;\r
+}\r
 `;function r(){let e=document.createElement(`div`),t=document.createElement(`style`);return t.textContent=n,console.log(t),e.classList.add(`content-root`),e.innerHTML=`
   <section class="info">
    <h3>Valores</h3>
@@ -387,17 +421,31 @@ button:focus-visible {\r
    
     <h3>Formas de pago</h3>
     <ul>
-      <li>Transferencia al alias: alias.de.carrera.mp</li>
+      <li>Transferencia a:</li>
+      <ul>
+      <li>CBU: 4530000800018868461796</li>
+      <li>Alias: grupales.impulso</li>
+      <li>Titular: Melina Aylen Jara</li>
+      <li>CUIL: 27466137427</li>
+      <li>Naranja X</li>
+      </ul>
       <li>Con efectivo en Gimnasio IMPULSO</li>
     </ul>
     <h3>
-      Enviar comprobantes a alguno de estos
-      contactos
+      Enviar comprobante a
     </h3>
     <ul>
-      <li>un contacto</li>
-      <li>un contacto</li>
-      <li>un contacto</li>
+      <li>+54 9 2944125766</li>
+      <li>
+        <a
+            class="whatsapp-link"
+            href="https://wa.me/5492944125766"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            📱 Enviar por WhatsApp
+        </a>
+    </li>
     </ul>
     <h3 class="clarification__title">ACLARACIÓN</h3>
     <p class="clarification__text">

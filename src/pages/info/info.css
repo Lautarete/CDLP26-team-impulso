@@ -1,0 +1,242 @@
+/* ===========================
+   CONTENEDOR
+=========================== */
+
+:host,
+.info {
+  display: block;
+}
+
+.info {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  background: var(--surface, #fff);
+  border-radius: var(--radius, 16px);
+  box-shadow: var(--shadow, 0 10px 30px rgba(0, 0, 0, 0.08));
+}
+
+/* ===========================
+   TÍTULOS
+=========================== */
+
+h3 {
+  margin: 2rem 0 0.75rem;
+
+  color: var(--primary, #124e78);
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+h3:first-child {
+  margin-top: 0;
+}
+
+/* ===========================
+   PÁRRAFOS
+=========================== */
+
+.prices__text,
+.clarification__text {
+  margin: 0.5rem 0;
+
+  color: var(--text, #1d2939);
+  line-height: 1.7;
+}
+
+/* ===========================
+   VALORES
+=========================== */
+
+.prices__container {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1rem 0 2rem;
+}
+
+.prices__card {
+  flex: 1;
+
+  padding: 1.5rem;
+
+  background: #fafbfd;
+
+  border: 1px solid #d9e2ec;
+  border-radius: 14px;
+
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.prices__card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+}
+
+.prices__card:first-child {
+  /* display: none; */
+  /* esta es la de la oferta */
+  background: #eef9f4;
+  border-color: #8fd3b5;
+}
+
+.prices__text {
+  margin: 0 0 1rem;
+
+  font-size: 1.05rem;
+  font-weight: 700;
+
+  color: var(--primary, #124e78);
+}
+
+.prices__card ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.prices__card li {
+  margin: 0.7rem 0;
+}
+
+/* ===========================
+   LISTAS
+=========================== */
+
+ul {
+  margin: 0.75rem 0 1.5rem;
+  padding-left: 1.4rem;
+}
+
+li {
+  margin: 0.55rem 0;
+
+  color: var(--text, #1d2939);
+  line-height: 1.6;
+}
+
+/* ===========================
+   ACLARACIÓN
+=========================== */
+
+.clarification__title {
+  margin-top: 2.5rem;
+
+  color: #b54708;
+}
+
+.clarification__text {
+  padding: 1rem 1.25rem;
+
+  background: #fff7e8;
+
+  border-left: 5px solid #f79009;
+  border-radius: 8px;
+}
+
+/* ===========================
+   BOTÓN
+=========================== */
+
+button {
+  display: block;
+
+  width: 100%;
+
+  margin-top: 2.5rem;
+  padding: 1rem 1.5rem;
+
+  border: none;
+  border-radius: 12px;
+
+  background: var(--primary, #124e78);
+
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s,
+    transform 0.2s,
+    box-shadow 0.25s;
+}
+
+button:hover {
+  background: var(--secondary, #1b9aaa);
+  box-shadow: 0 10px 24px rgba(18, 78, 120, 0.25);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:focus-visible {
+  outline: 3px solid rgba(27, 154, 170, 0.35);
+  outline-offset: 3px;
+}
+
+/* ===========================
+   TABLETS
+=========================== */
+
+@media (max-width: 768px) {
+  .info {
+    padding: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+}
+
+/* ===========================
+   MÓVILES
+=========================== */
+
+@media (max-width: 480px) {
+  .info {
+    padding: 1.25rem;
+    border-radius: 12px;
+  }
+
+  h3 {
+    font-size: 1.15rem;
+  }
+
+  ul {
+    padding-left: 1.15rem;
+  }
+
+  button {
+    padding: 0.95rem;
+    font-size: 0.95rem;
+  }
+}
+@media (max-width: 600px) {
+  .prices__container {
+    flex-direction: column;
+  }
+}
+.prices__card--discount {
+  position: relative;
+}
+
+.prices__badge {
+  position: absolute;
+  top: -10px;
+  right: 16px;
+
+  padding: 0.35rem 0.8rem;
+
+  background: #2bb673;
+
+  color: white;
+
+  border-radius: 999px;
+
+  font-size: 0.8rem;
+  font-weight: 700;
+}

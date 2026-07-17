@@ -1,0 +1,130 @@
+/* ===========================
+   RESET
+=========================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+:root {
+  --primary: #124e78;
+  --secondary: #1b9aaa;
+  --accent: #2bb673;
+
+  --background: #f4f6f8;
+  --surface: #ffffff;
+
+  --text: #1d2939;
+  --text-light: #52606d;
+
+  --radius: 16px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+body {
+  margin: 0;
+  font-family: Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  background: #f4f6f8;
+  color: #1d2939;
+}
+
+/* ===========================
+   LAYOUT
+=========================== */
+
+.root {
+  width: min(900px, 92%);
+  margin: 3rem auto;
+}
+
+.content-section {
+  margin-top: 2rem;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.title {
+  margin: 0;
+
+  text-align: center;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 800;
+  letter-spacing: -1px;
+
+  color: #124e78;
+}
+
+.subtitle {
+  margin: 0.4rem 0;
+
+  text-align: center;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 500;
+
+  color: #52606d;
+}
+
+.subtitle:last-of-type {
+  margin-bottom: 2rem;
+}
+
+/* ===========================
+   DECORACIÓN
+=========================== */
+
+.root::after {
+  content: "";
+
+  display: block;
+
+  width: 120px;
+  height: 4px;
+
+  margin: 2rem auto 0;
+
+  border-radius: 999px;
+
+  background: linear-gradient(90deg, #2bb673, #1b9aaa);
+}
+
+/* ===========================
+   TABLETS
+=========================== */
+
+@media (max-width: 768px) {
+  .root {
+    width: 94%;
+    margin: 2rem auto;
+  }
+
+  .content-section {
+    margin-top: 1.5rem;
+  }
+}
+
+/* ===========================
+   MÓVILES
+=========================== */
+
+@media (max-width: 480px) {
+  .root {
+    margin: 1.25rem auto;
+  }
+
+  .subtitle {
+    line-height: 1.45;
+  }
+
+  .root::after {
+    width: 90px;
+  }
+}

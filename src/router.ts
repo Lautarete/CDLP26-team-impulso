@@ -1,7 +1,5 @@
-import { mountSeccion1 } from "./pages/seccion1/seccion1";
-import { mountSeccion2 } from "./pages/seccion2/seccion2";
-import { mountClarification } from "./pages/clarification/clarification";
-import { mountLast } from "./pages/last/last";
+import { mountForm } from "./pages/form/form";
+import { mountInfo } from "./pages/info/info";
 
 // encuentra la ruta actual y en funcion del path crea monta la pagina
 const BASE_PATH = "/CDLP26-team-impulso";
@@ -10,23 +8,19 @@ export function router() {
   const routes = [
     {
       path: /\/$/,
-      pageToMount: mountSeccion1(),
+      pageToMount: mountInfo(),
     },
     {
-      path: /\/seccion1/,
-      pageToMount: mountSeccion1(),
+      path: /\^$/,
+      pageToMount: mountInfo(),
     },
     {
-      path: /\/pagos/,
-      pageToMount: mountSeccion2(),
+      path: /\/formulario/,
+      pageToMount: mountForm(),
     },
     {
-      path: /\/aclaracion/,
-      pageToMount: mountClarification(),
-    },
-    {
-      path: /\/incripcion-completa/,
-      pageToMount: mountLast(),
+      path: /\/informacion/,
+      pageToMount: mountInfo(),
     },
   ];
 

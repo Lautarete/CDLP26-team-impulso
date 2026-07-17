@@ -1,0 +1,110 @@
+/* ===========================
+   CONTENEDOR
+=========================== */
+
+.form {
+  max-width: 900px;
+  margin: 0 auto;
+
+  padding: 2rem;
+
+  background: var(--surface, #fff);
+
+  border-radius: var(--radius, 16px);
+  box-shadow: var(--shadow, 0 10px 30px rgba(0, 0, 0, 0.08));
+}
+
+/* ===========================
+   GOOGLE FORM
+=========================== */
+
+iframe {
+  display: block;
+
+  width: 100%;
+  /* min-height: 900px; */
+
+  /* border: none; */
+  /* border-radius: 12px; */
+  /* pointer-events: all; */
+}
+
+/* ===========================
+   MENSAJE
+=========================== */
+
+.form p {
+  margin: 1rem 0 0;
+
+  text-align: center;
+  color: var(--text, #1d2939);
+  line-height: 1.6;
+}
+
+.form p:first-of-type {
+  margin-top: 2rem;
+
+  font-weight: 600;
+}
+
+/* ===========================
+   BOTÓN
+=========================== */
+
+button {
+  display: block;
+
+  width: 100%;
+  max-width: 320px;
+
+  margin: 2rem auto 0;
+
+  padding: 1rem;
+
+  border: none;
+  border-radius: 12px;
+
+  background: var(--primary, #124e78);
+
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s,
+    transform 0.2s;
+}
+
+button:hover {
+  background: var(--secondary, #1b9aaa);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* ===========================
+   TABLETS
+=========================== */
+
+@media (max-width: 768px) {
+  .form {
+    padding: 1.5rem;
+  }
+}
+
+/* ===========================
+   MÓVILES
+=========================== */
+
+@media (max-width: 480px) {
+  .form {
+    padding: 1rem;
+  }
+
+  iframe {
+    min-height: 1050px;
+  }
+}

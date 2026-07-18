@@ -240,3 +240,39 @@ button:focus-visible {
   font-size: 0.8rem;
   font-weight: 700;
 }
+
+.whatsapp-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  padding: 0.6rem 1rem;
+
+  margin-top: 0.3rem;
+
+  background: #25d366;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+
+  border-radius: 999px;
+
+  transition:
+    background 0.2s,
+    transform 0.15s,
+    box-shadow 0.2s;
+}
+
+.whatsapp-link:hover {
+  background: #1ebe5d;
+  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.25);
+}
+
+.whatsapp-link:active {
+  transform: scale(0.98);
+}
+
+.whatsapp-link:focus-visible {
+  outline: 3px solid rgba(37, 211, 102, 0.3);
+  outline-offset: 3px;
+}

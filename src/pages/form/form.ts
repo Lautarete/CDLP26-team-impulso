@@ -7,9 +7,7 @@ export function mountForm() {
   formRootEl.classList.add("welcome-root");
   formRootEl.innerHTML = `
 <section class="form">
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdZFFNWHx72RQFYKLcQlOygRMmx3HUkc33b6Q-ubbKKENCARA/viewform?embedded=true" width="640" height="841" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
-  <p>Una vez enviado el formulario ya estas inscripto/a</p>
-  <p>Recuerda abonar por alguno de los medios de pago</p>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdXYl4DO9wTUQiv4F38P6VIq0U9e-JwlrB5EsjblDTIPCBhhA/viewform?embedded=true" width="640" height="2493" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
   <button>Ver pagos</button>
 </section">
   `;

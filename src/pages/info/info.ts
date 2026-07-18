@@ -37,17 +37,31 @@ export function mountInfo() {
    
     <h3>Formas de pago</h3>
     <ul>
-      <li>Transferencia al alias: alias.de.carrera.mp</li>
+      <li>Transferencia a:</li>
+      <ul>
+      <li>CBU: 0110246030024605150901</li>
+      <li>Alias:meli.jara.aylen</li>
+      <li>Titular: Melina Aylen Jara</li>
+      <li>CUIL:27466137427</li>
+      <li>Banco Nación</li>
+      </ul>
       <li>Con efectivo en Gimnasio IMPULSO</li>
     </ul>
     <h3>
-      Enviar comprobantes a alguno de estos
-      contactos
+      Enviar comprobante a
     </h3>
     <ul>
-      <li>un contacto</li>
-      <li>un contacto</li>
-      <li>un contacto</li>
+      <li>+54 9 2944125766</li>
+      <li>
+        <a
+            class="whatsapp-link"
+            href="https://wa.me/5492944125766"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            📱 Enviar por WhatsApp
+        </a>
+    </li>
     </ul>
     <h3 class="clarification__title">ACLARACIÓN</h3>
     <p class="clarification__text">

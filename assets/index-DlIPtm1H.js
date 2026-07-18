@@ -423,11 +423,11 @@ button:focus-visible {\r
     <ul>
       <li>Transferencia a:</li>
       <ul>
-      <li>CBU: 4530000800018868461796</li>
-      <li>Alias: grupales.impulso</li>
+      <li>CBU: 0110246030024605150901</li>
+      <li>Alias:meli.jara.aylen</li>
       <li>Titular: Melina Aylen Jara</li>
-      <li>CUIL: 27466137427</li>
-      <li>Naranja X</li>
+      <li>CUIL:27466137427</li>
+      <li>Banco Nación</li>
       </ul>
       <li>Con efectivo en Gimnasio IMPULSO</li>
     </ul>

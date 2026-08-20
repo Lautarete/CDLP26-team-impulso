@@ -397,7 +397,7 @@ button:focus-visible {\r
     <div class="prices__container">
       <div class="prices__card  prices__card--discount">
       <span class="prices__badge">
-        15% OFF
+        10% OFF
     </span>
         <p class="prices__text">
           Hasta el 15/09: 

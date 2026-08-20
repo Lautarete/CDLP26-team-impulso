@@ -400,7 +400,7 @@ button:focus-visible {\r
         15% OFF
     </span>
         <p class="prices__text">
-          Hasta el 15/08: 
+          Hasta el 15/09: 
         </p>
         <ul>
           <li>10K $51.000 </li>

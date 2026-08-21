@@ -403,9 +403,9 @@ button:focus-visible {\r
           Hasta el 15/09: 
         </p>
         <ul>
-          <li>10K $51.000 </li>
-          <li>5K $34.000</li>
-          <li>2,5K $25.500</li>
+          <li>10K $54.000 </li>
+          <li>5K $36.000</li>
+          <li>2,5K $27.000</li>
         </ul></div>
       <div class="prices__card">
         <p class="prices__text">

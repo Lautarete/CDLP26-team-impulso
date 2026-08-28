@@ -392,7 +392,7 @@ button:focus-visible {\r
   outline-offset: 3px;\r
 }\r
 `;function r(){let e=document.createElement(`div`),t=document.createElement(`style`);return t.textContent=n,console.log(t),e.classList.add(`content-root`),e.innerHTML=`
-  <section class="info">
+  <section translate="no" class="info">
    <h3>Valores</h3>
     <div class="prices__container">
       <div class="prices__card  prices__card--discount">
@@ -403,18 +403,18 @@ button:focus-visible {\r
           Hasta el 15/09: 
         </p>
         <ul>
-          <li>10K $54.000 </li>
-          <li>5K $36.000</li>
-          <li>2,5K $27.000</li>
+          <li>10km AR$54.000 </li>
+          <li>5km AR$36.000</li>
+          <li>2,5km AR$27.000</li>
         </ul></div>
       <div class="prices__card">
         <p class="prices__text">
           Valor normal:
         </p>
         <ul>
-          <li>10K $60.000</li>
-          <li>5K $40.000</li>
-          <li>2,5K $30.000</li>
+          <li>10km AR$60.000</li>
+          <li>5km AR$40.000</li>
+          <li>2,5km AR$30.000</li>
         </ul>
     </div>
    </div>

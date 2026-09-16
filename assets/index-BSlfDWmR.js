@@ -337,6 +337,7 @@ button:focus-visible {\r
 }\r
 .prices__card--discount {\r
   position: relative;\r
+  display: none;\r
 }\r
 \r
 .prices__badge {\r
@@ -408,9 +409,7 @@ button:focus-visible {\r
           <li>2,5km AR$27.000</li>
         </ul></div>
       <div class="prices__card">
-        <p class="prices__text">
-          Valor normal:
-        </p>
+        <p class="prices__text"></p>
         <ul>
           <li>10km AR$60.000</li>
           <li>5km AR$40.000</li>
